@@ -11,3 +11,5 @@ controllers
 
 בcontrollers פונקציות POST ששומרות בDB את הנתונים לפי המבנה שלהם, כמו בEntities
 ופונקציות GET ע"פ הדרישות .
+
+
