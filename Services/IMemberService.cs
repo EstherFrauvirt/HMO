@@ -7,5 +7,6 @@ namespace Services
         Task<Member> addMember(Member member);
         Task<IEnumerable<Member>> GetAllMembers();
         Task<int> peopleNotVaccinated();
+        Task<int> countSickPeoplePerDay(DateTime d);
     }
 }

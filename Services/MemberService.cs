@@ -36,5 +36,13 @@ namespace Services
             return count;
         }
 
+        public async Task<int> countSickPeoplePerDay(DateTime d)
+        {
+            int count =  await _memberRepository.countSickPeoplePerDay(d);
+            return count;
+
+
+        }
+
     }
 }

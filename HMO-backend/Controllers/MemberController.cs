@@ -40,6 +40,13 @@ namespace HMO_backend.Controllers
             int count = await _memberService.peopleNotVaccinated();
             return Ok(count);
         }
+        // GET api/<MemberController>/getCOunt
+        [HttpGet("getCount/{d}")]
+        public async Task<ActionResult<int>> Get(DateTime d)
+        {
+            int count = await _memberService.countSickPeoplePerDay(d);
+            return Ok(count);
+        }
 
         // POST api/<MemberController>
         [HttpPost]
