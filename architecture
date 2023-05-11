@@ -1,0 +1,13 @@
+רכיבי במערכת הם:
+Entities
+   -members
+   -vaccination
+repository
+services
+controllers
+כל שכברה משתמשת בשכבה לפניה
+
+הקשר בין לכל memberId vaccination שמקושר לmemberId
+
+בcontrollers פונקציות POST ששומרות בDB את הנתונים לפי המבנה שלהם, כמו בEntities
+ופונקציות GET ע"פ הדרישות .
