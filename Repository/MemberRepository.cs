@@ -37,8 +37,7 @@ namespace Repository
         }
         public async Task<int> countSickPeoplePerDay(DateTime d)
         {
-            DateTime currentDate = DateTime.Now.Date;
-            DateTime fourteenDaysAgo = currentDate.AddDays(-14);
+            DateTime fourteenDaysAgo = d.AddDays(-14);
 
             int totalMembers = _hmoContext.Members
                 .Where(m => m.DiseaseDate >= fourteenDaysAgo)
